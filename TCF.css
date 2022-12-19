@@ -14,11 +14,9 @@
   vertical-align: baseline;
   font-size: 14px;
 }
-
 ul {
   list-style: none;
 }
-
 body {
   line-height: 1.42857143;
   font-size: 14px;
@@ -29,24 +27,22 @@ body {
   overflow-y: auto;
   font-weight: 400;
 }
-
 a {
   text-decoration: none;
   color: #00000099;
 }
-
-.box {
-  img {
-    margin-right: 5px;
-  }
-  a {
-    .flex_box();
-    span {
-      font-size: 12px;
-      line-height: 1.42857143;
-      opacity: 0.65;
-    }
-  }
+.box img {
+  margin-right: 5px;
+}
+.box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box a span {
+  font-size: 12px;
+  line-height: 1.42857143;
+  opacity: 0.65;
 }
 header {
   height: 60px;
@@ -58,12 +54,14 @@ header {
 .logo {
   width: 255px;
   padding-top: 20px;
-  a {
-    .flex_box();
-    img {
-      width: 200px;
-      width: 100%;
-      max-width: 200px;
-    }
-  }
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo a img {
+  width: 200px;
+  width: 100%;
+  max-width: 200px;
 }
