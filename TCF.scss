@@ -1,0 +1,14 @@
+%flex_row {
+  display: flex;
+  flex-direction: row;
+}
+.header-container {
+  @extend %flex_row;
+  margin: 0 89.5px;
+  background-color: transparent;
+  height: 60px;
+}
+
+.menu {
+  @extend %flex_row;
+}
