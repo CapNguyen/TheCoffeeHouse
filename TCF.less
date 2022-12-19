@@ -1,0 +1,37 @@
+.flex_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  img {
+    margin-right: 5px;
+  }
+  a {
+    .flex_box();
+    span {
+      font-size: 12px;
+      line-height: 1.42857143;
+      opacity: 0.65;
+    }
+  }
+}
+header {
+  height: 60px;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  background: rgba(255, 255, 255, 0.8);
+}
+.logo {
+  width: 255px;
+  padding-top: 20px;
+  a {
+    .flex_box();
+    img {
+      width: 200px;
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+}
