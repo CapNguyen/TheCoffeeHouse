@@ -1,0 +1,27 @@
+.menu, .header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-container {
+  justify-content: space-between;
+  margin: auto;
+  background-color: transparent;
+  height: 60px;
+}
+
+.menu {
+  margin: 0 3%;
+}
+.menu-box {
+  padding: 19px 16px;
+}
+.menu-box a {
+  color: #000;
+  font-weight: 600;
+}
+.menu-box a:hover {
+  color: #ea8025;
+}
+
+/*# sourceMappingURL=TCF_sass.css.map */

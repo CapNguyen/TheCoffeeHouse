@@ -19,6 +19,7 @@
 .logo {
   width: 255px;
   padding-top: 20px;
+  margin-left: 5%;
 }
 .logo a {
   display: flex;
