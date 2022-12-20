@@ -3,34 +3,6 @@
   align-items: center;
   justify-content: center;
 }
-* {
-  box-sizing: border-box;
-  font-family: "SF Pro Text", sans-serif;
-  border: 0;
-  font-size: 100%;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-  font-size: 14px;
-}
-ul {
-  list-style: none;
-}
-body {
-  line-height: 1.42857143;
-  font-size: 14px;
-  color: #000;
-  background: #fff;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-  font-weight: 400;
-}
-a {
-  text-decoration: none;
-  color: #00000099;
-}
 .box img {
   margin-right: 5px;
 }
@@ -43,13 +15,6 @@ a {
   font-size: 12px;
   line-height: 1.42857143;
   opacity: 0.65;
-}
-header {
-  height: 60px;
-  top: 0;
-  z-index: 99;
-  position: sticky;
-  background: rgba(255, 255, 255, 0.8);
 }
 .logo {
   width: 255px;
