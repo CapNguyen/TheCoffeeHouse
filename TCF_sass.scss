@@ -1,5 +1,5 @@
 $hover_color: #ea8025;
-@mixin default_font($size, $color, $weight) {
+@mixin set_font($size, $color, $weight) {
   font-family: "SF Pro Display", sans-serif;
   font-size: $size;
   font-weight: $weight;
@@ -33,7 +33,7 @@ $hover_color: #ea8025;
       background: rgba(255, 255, 255, 0.95);
       visibility: visible;
     }
-    >a {
+    > a {
       color: #000;
       font-weight: 600;
       &:hover {
@@ -69,13 +69,12 @@ $hover_color: #ea8025;
   }
 }
 .depa {
-
   &-title {
     h3 {
-      @include default_font(28px, #000000d9, bold);
+      @include set_font(28px, #000000d9, bold);
     }
     p {
-      @include default_font(16px, #000000d9, normal);
+      @include set_font(16px, #000000d9, normal);
       line-height: 24px;
       width: 75%;
       margin-bottom: 10px;
@@ -104,4 +103,69 @@ $hover_color: #ea8025;
 }
 #svg3 {
   @include setBgSVG(35.5%, 14px, 140px);
+}
+
+.item {
+  &-info {
+    padding: 16px 0;
+    span {
+      color: #00000099;
+      font-size: 14px;
+    }
+    > h3 {
+      font-size: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 350px;
+    }
+  }
+}
+h3 {
+  &.blog-heading {
+    border-left: 4px solid #e57905;
+    padding-left: 12px;
+    margin: 24px 0;
+    a {
+      font-size: 25px;
+    }
+  }
+}
+.footer {
+  &1 {
+    display: flex;
+    margin: 0 -15px;
+  }
+  &2 {
+    display: flex;
+    flex-direction: column;
+    P {
+      @include set_font(12px, #fff, 100);
+      margin: 20px 0 24px;
+    }
+  }
+  &-container {
+    margin: 0 105px;
+    padding: 0 15px;
+  }
+  &-item {
+    padding: 0 15px;
+    width: 25%;
+    p {
+      @include set_font(14px, #fff, 100);
+      margin: 24px 0;
+      line-height: 20px;
+    }
+    h3 {
+      @include set_font(14px, #fff, bold);
+      margin: 0 0 16px;
+    }
+    > ul > li {
+      margin-bottom: 15px;
+      > a {
+        @include set_font(12px, #fff, 100);
+        font-family: "Lato", sans-serif;
+      }
+    }
+  }
 }

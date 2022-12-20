@@ -12,6 +12,7 @@
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 body {
@@ -401,11 +402,11 @@ div.price {
 
 .article-img img {
     height: 178px;
-    width: 370px;
+    width: 350px;
     border-radius: 10px;
 
 }
-
+/* 
 .item-info span {
     color: #00000099;
     font-size: 14px;
@@ -431,7 +432,7 @@ h3.blog-heading {
 
 h3.blog-heading a {
     font-size: 25px;
-}
+} */
 
 footer {
     background: #000000D9;
@@ -440,7 +441,7 @@ footer {
     display: block;
 
 }
-
+/* 
 .footer-container {
     margin-right: 105px;
     margin-left: 105px;
@@ -490,12 +491,12 @@ footer {
 
 .footer-item>ul>li {
     margin-bottom: 15px;
-}
+} */
 
 .hr {
     border-top: white solid 1px;
 }
-
+/* 
 .footer-item p {
     font-weight: 100;
     margin: 24px 0;
@@ -503,10 +504,6 @@ footer {
     line-height: 20px;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
 
 .footer2 {
     display: flex;
@@ -519,7 +516,7 @@ ul {
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
-}
+} */
 
 #hotline {
     width: 60px;
