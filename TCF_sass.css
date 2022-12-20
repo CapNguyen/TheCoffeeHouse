@@ -4,10 +4,10 @@
 }
 
 .header-container {
-  justify-content: space-between;
   margin: auto;
   background-color: transparent;
   height: 60px;
+  margin-left: 5%;
 }
 
 .menu {
@@ -16,12 +16,86 @@
 .menu-box {
   padding: 19px 16px;
 }
-.menu-box a {
+.menu-box:hover .fullMenu {
+  top: 100%;
+  pointer-events: auto;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.95);
+  visibility: visible;
+}
+.menu-box > a {
   color: #000;
   font-weight: 600;
 }
-.menu-box a:hover {
+.menu-box > a:hover {
   color: #ea8025;
+}
+
+.slide {
+  transform: translateY(-60px);
+  position: relative;
+  height: 405px;
+}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+.slideshow_nav, .slide_nav, .slide_img img {
+  cursor: pointer;
+}
+.slide_img {
+  display: block;
+}
+.slide_img img {
+  width: 100%;
+}
+.slide_nav {
+  text-align: center;
+  transform: translateY(-35px);
+}
+
+.depa-title h3 {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.8509803922);
+}
+.depa-title p {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8509803922);
+  line-height: 24px;
+  width: 75%;
+  margin-bottom: 10px;
+  height: 115px;
+}
+.depa-info {
+  padding-left: 95px;
+  align-self: center;
+}
+.depa-img {
+  margin-top: 20px;
+  width: 156%;
+}
+.depa-img img {
+  width: 100%;
+  height: 505px;
+  z-index: 90;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 8px;
+}
+
+#svg2 {
+  left: 33.29%;
+  transform: translate(69.1px, -3px);
+}
+
+#svg3 {
+  left: 35.5%;
+  transform: translate(14px, 140px);
 }
 
 /*# sourceMappingURL=TCF_sass.css.map */

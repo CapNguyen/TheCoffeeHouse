@@ -1,14 +1,24 @@
 $hover_color: #ea8025;
+@mixin default_font($size, $color, $weight) {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+@mixin setBgSVG($left, $moveX, $moveY) {
+  left: $left;
+  transform: translate($moveX, $moveY);
+}
 %flex_row {
   display: flex;
   flex-direction: row;
 }
 .header-container {
   @extend %flex_row;
-  justify-content: space-between;
   margin: auto;
   background-color: transparent;
   height: 60px;
+  margin-left: 5%;
 }
 
 .menu {
@@ -16,7 +26,14 @@ $hover_color: #ea8025;
   margin: 0 3%;
   &-box {
     padding: 19px 16px;
-    a {
+    &:hover .fullMenu {
+      top: 100%;
+      pointer-events: auto;
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.95);
+      visibility: visible;
+    }
+    >a {
       color: #000;
       font-weight: 600;
       &:hover {
@@ -24,4 +41,67 @@ $hover_color: #ea8025;
       }
     }
   }
+}
+
+.slide {
+  transform: translateY(-60px);
+  position: relative;
+  height: 405px;
+  &show-container {
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+  }
+  &show_nav {
+    cursor: pointer;
+  }
+  &_img {
+    display: block;
+    img {
+      width: 100%;
+      @extend .slideshow_nav;
+    }
+  }
+  &_nav {
+    text-align: center;
+    transform: translateY(-35px);
+    @extend .slideshow_nav;
+  }
+}
+.depa {
+
+  &-title {
+    h3 {
+      @include default_font(28px, #000000d9, bold);
+    }
+    p {
+      @include default_font(16px, #000000d9, normal);
+      line-height: 24px;
+      width: 75%;
+      margin-bottom: 10px;
+      height: 115px;
+    }
+  }
+  &-info {
+    padding-left: 95px;
+    align-self: center;
+  }
+  &-img {
+    margin-top: 20px;
+    width: 156%;
+    img {
+      width: 100%;
+      height: 505px;
+      z-index: 90;
+      position: relative;
+      vertical-align: middle;
+      border-radius: 8px;
+    }
+  }
+}
+#svg2 {
+  @include setBgSVG(33.29%, 69.1px, -3px);
+}
+#svg3 {
+  @include setBgSVG(35.5%, 14px, 140px);
 }

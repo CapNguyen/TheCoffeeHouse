@@ -1,3 +1,4 @@
+@default_font: 14px;
 .flex_box {
   display: flex;
   align-items: center;
@@ -5,13 +6,14 @@
 }
 
 .box {
+  padding: 0 49.125px;
   img {
     margin-right: 5px;
   }
   a {
     .flex_box();
     > span {
-      font-size: 12px;
+      font-size: (@default_font - 2px);
       line-height: 1.42857143;
       opacity: 0.65;
     }
@@ -29,5 +31,66 @@
       width: 100%;
       max-width: 200px;
     }
+  }
+}
+
+.menuChoice {
+  padding: 12px 20px;
+  flex: 1;
+  div {
+    border-bottom: 2px solid;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+.cloudtea {
+  &-img,
+  &-info {
+    width: 588px;
+  }
+  &-description {
+    font-size: @default_font + 2px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    padding-bottom: 16px;
+  }
+}
+.button{
+  border-radius: 12px;
+    border: transparent;
+    height: 42px;
+    width: 275px;
+    background: #B3DDCA;
+    span{
+      text-align: center;
+    font-weight: 600;
+    line-height: 40px;
+    color: #fff;
+    font-size: @default_font * 1.25;
+    }
+}
+.blog{
+  &-container{
+    margin: 0 auto;
+    padding: 0 20px;
+    width:80%;
+  }
+  &-title{
+    .flex_box();
+    font-size: 2* @default_font;
+    padding: 40px 10px 0 0;
+  }
+  &-list{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+  }
+  &-item{
+    flex: 0 0 30%;
+    overflow: hidden;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
   }
 }
